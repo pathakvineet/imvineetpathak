@@ -5,6 +5,7 @@ import Me from "./Sections/Me";
 import Skills from "./Sections/Skills";
 import FindMe from "./Sections/FindMe";
 import Work from "./Sections/Work";
+import "./assets/css/common.css";
 
 function App() {
   return (

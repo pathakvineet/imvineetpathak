@@ -1,0 +1,43 @@
+.me-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.blinking {
+  animation: blink 2s step-end infinite; /* Adjust the duration as needed */
+}
+
+@media screen and (min-width: 576px) {
+  .me-container {
+    /* background-color: red; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .me-container {
+    /* background-color: blue; */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .me-container {
+    /* background-color: green; */
+  }
+}

@@ -1,0 +1,39 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill-detail-holder {
+  width: 80%;
+}
+.skill-detail-holder p {
+}
+
+.skill-detail-bar {
+  background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 576px) {
+  .skills-container {
+    /* background-color: red; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-container {
+    /* background-color: blue; */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill-detail-holder p {
+    font-size: 48px;
+  }
+}
