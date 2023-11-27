@@ -10,6 +10,7 @@ export default function Footer() {
 
   return (
     <div className="footer-container">
+      <hr />
       <div className="footer-sections">
         <div>
           <h6>Contact Me</h6>
@@ -18,10 +19,13 @@ export default function Footer() {
         <div>
           <h6 style={{ cursor: "pointer" }}>Download resume ⬇️</h6>
           <p>Last update: {updatedAt()}</p>
-          <p>website/resume version: {packageJson?.version}</p>
+          <p>website / resume version: {packageJson?.version}</p>
         </div>
       </div>
-      <p>© [2023] Vineet Pathak. Crafted with ❤️ and code.</p>
+      {/* <hr /> */}
+      <p className="copyright">
+        © [2023] <strong>Vineet Pathak</strong>. Crafted with ❤️ and code.
+      </p>
     </div>
   );
 }

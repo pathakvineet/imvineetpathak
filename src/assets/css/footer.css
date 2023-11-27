@@ -1,5 +1,6 @@
 .footer-container {
   width: 100%;
+  margin: 5% auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +15,15 @@
   gap: 40px;
 }
 
+.footer-container hr {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.copyright {
+  margin: 5%;
+}
+
 @media screen and (min-width: 576px) {
   .footer-container {
     /* background-color: red; */
@@ -21,19 +31,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer-container {
-    /* background-color: blue; */
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-container {
-  }
   .footer-sections {
     width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
   }
 }

@@ -1,8 +1,9 @@
 import React from "react";
+import "../assets/css/hobbies.css";
 
 export default function HobbiesAndLikes() {
   return (
-    <div>
+    <div className="hobbies-container">
       <h3>Hobbies and Likes</h3>
       <p>Cooking (not much)</p>
       <p>Gardening (started late 023)</p>

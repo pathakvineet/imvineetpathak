@@ -1,8 +1,22 @@
 .find-me-container {
+  width: 90%;
+  margin: 5% auto;
   display: flex;
   flex-direction: column;
-  align-items: end;
   justify-content: center;
+}
+
+.find-me-card {
+  border: 1px solid var(--neutral-one);
+  border-radius: 8px;
+  padding: 8px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.find-me-card div {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 576px) {
@@ -19,16 +33,5 @@
 
 @media screen and (min-width: 1200px) {
   .find-me-container {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-  }
-
-  .find-me-container h3 {
-    padding-right: 10%;
-  }
-  .find-me-container {
-    padding-right: 10%;
   }
 }

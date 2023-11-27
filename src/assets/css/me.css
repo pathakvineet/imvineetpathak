@@ -1,8 +1,9 @@
 .me-container {
   height: 90vh;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
