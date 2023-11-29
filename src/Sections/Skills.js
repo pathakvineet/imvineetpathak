@@ -1,17 +1,27 @@
 import React from "react";
 import "../assets/css/skills.css";
+const skillsList = [
+  { name: "React.js", percentage: 86, color: "#FE6F5E" },
+  { name: "Nodejs", percentage: 78, color: "#FFBF00" },
+  { name: "MongoDB", percentage: 72, color: "#EFDECD" },
+  { name: "CSS", percentage: 80, color: "#03C03C" },
+  { name: "Debugging and Troubleshooting", percentage: 68, color: "#8A2BE2" },
+  { name: "Collaboration / Team Player", percentage: 96, color: "#00B7EB" },
+  { name: "Continuous Learning", percentage: 75, color: "#CD7F32" },
+  { name: "Creativity", percentage: 90, color: "#A91101" },
+];
 
-export function SkillDetail(props) {
+export function SkillDetail({ name, percentage, color }) {
   return (
     <div className="skill-detail-holder">
-      <p>{props.name || "none"}</p>
-      <div style={{ border: "1px solid #ccc" }}>
+      <p style={{ paddingBottom: "8px" }}>{name || "none"}</p>
+      <div style={{ border: "1px solid #ccc", marginBottom: "16px" }}>
         <div
-          className="skill-detail-bar"
           style={{
-            height: "24px",
+            backgroundColor: color,
+            height: "14px",
             color: "white",
-            width: props.percentage + "%",
+            width: percentage + "%",
             textAlign: "center",
           }}
         ></div>
@@ -24,14 +34,15 @@ export default function Skills() {
   return (
     <div className="skills-container">
       <h3>Skills</h3>
-      <SkillDetail name="React.js" percentage={86} />
-      <SkillDetail name="Node.js" percentage={78} />
-      <SkillDetail name="MondoDB" percentage={72} />
-      <SkillDetail name="CSS" percentage={80} />
-      <SkillDetail name="Debugging and Troubleshooting" percentage={68} />
-      <SkillDetail name="Collaboration / Team Player" percentage={96} />
-      <SkillDetail name="Continuous Learning" percentage={75} />
-      <SkillDetail name="Creativity" percentage={90} />
+      {skillsList.map((item) => {
+        return (
+          <SkillDetail
+            name={item.name}
+            percentage={item.percentage}
+            color={item.color}
+          />
+        );
+      })}
     </div>
   );
 }

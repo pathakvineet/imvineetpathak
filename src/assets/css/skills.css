@@ -9,12 +9,6 @@
 .skill-detail-holder {
   width: 80%;
 }
-.skill-detail-holder p {
-}
-
-.skill-detail-bar {
-  background-color: var(--primary-color);
-}
 
 @media screen and (min-width: 576px) {
   .skills-container {
@@ -30,6 +24,6 @@
 
 @media screen and (min-width: 1200px) {
   .skill-detail-holder p {
-    font-size: 48px;
+    /* font-size: 48px; */
   }
 }
