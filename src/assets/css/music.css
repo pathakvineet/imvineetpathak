@@ -1,4 +1,4 @@
-.hobbies-container {
+.music-container {
   width: 90%;
   margin: 5% auto;
   display: flex;
@@ -7,16 +7,18 @@
   justify-content: center;
 }
 
-.hobby-card {
-  border-bottom: 1px solid var(--neutral-one);
-  padding-bottom: 4px;
+.spotify-card-shelf {
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  overflow: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .hobby-card {
-    padding-bottom: 8px;
-    margin: 8px 0;
+  .spotify-card-shelf {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow: auto;
   }
 }

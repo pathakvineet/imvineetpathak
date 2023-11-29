@@ -6,6 +6,7 @@ import Skills from "./Sections/Skills";
 import FindMe from "./Sections/FindMe";
 import Work from "./Sections/Work";
 import "./assets/css/common.css";
+// import Music from "./Sections/Music";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Work />
       <Skills />
       <HobbiesAndLikes />
+      {/* <Music /> */}
       <FindMe />
       <Footer />
     </div>

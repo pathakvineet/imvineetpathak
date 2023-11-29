@@ -19,6 +19,12 @@
   align-items: center;
 }
 
+.find-me-showcase {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 576px) {
   .find-me-container {
     /* background-color: red; */

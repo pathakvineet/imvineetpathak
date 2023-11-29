@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 @media screen and (min-width: 576px) {
@@ -20,10 +20,4 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .about-container {
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-    justify-content: center;
-  }
 }

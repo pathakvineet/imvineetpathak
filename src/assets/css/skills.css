@@ -29,12 +29,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .skills-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .skill-detail-holder p {
     font-size: 48px;
   }
