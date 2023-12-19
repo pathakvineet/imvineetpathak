@@ -1,6 +1,8 @@
 import React from "react";
 import "../assets/css/work.css";
+
 const years = [
+  "2014",
   "2015",
   "2016",
   "2017",
@@ -13,37 +15,102 @@ const years = [
   "2024",
 ];
 
+function TodayFormatted() {
+  // Get the current date
+  const currentDate = new Date();
+
+  // Get the current year
+  const currentYear = currentDate.getFullYear();
+
+  // Calculate the day of the year
+  const startOfYear = new Date(currentYear, 0, 1);
+  const totalDaysInYear =
+    Math.floor((currentDate - startOfYear) / (24 * 60 * 60 * 1000)) + 1;
+
+  // Calculate the percentage of days passed
+  const percentageDaysPassed = (totalDaysInYear / 365) * 100;
+
+  // Format the result
+  const formattedResult = `${currentYear}.${percentageDaysPassed.toFixed(2)}`;
+
+  return formattedResult;
+}
+
 let tempArray = [...years];
 const reversedYears = tempArray.reverse();
 
 const WorkInProgress = [
-  { name: "Ten20 Infomedia", color: "#FE6F5E", start: "2020", end: "2023" },
-  { name: "Airtel", color: "#FFBF00", start: "2015", end: "2016" },
-  { name: "PCE", color: "#EFDECD", start: "2017", end: "2018" },
-  { name: "Map Unwrap", color: "#03C03C", start: "2020", end: "2023" },
-  { name: "Bots n' Brains", color: "#8A2BE2", start: "2019", end: "2020" },
-  { name: "Ping Swing", color: "#00B7EB", start: "2018", end: "2019" },
-  { name: "Ping Swing 1", color: "#CD7F32", start: "2018", end: "2019" },
-  { name: "Ping Swing 2", color: "#A91101", start: "2018", end: "2019" },
+  {
+    name: "Ath Telcom",
+    color: "#CD7F32",
+    start: "2014.50",
+    end: "2015.00",
+    info: "Cabel labeling",
+  },
+  {
+    name: "Airtel",
+    color: "#FFBF00",
+    start: "2015.50",
+    end: "2016.00",
+    info: "4G, Sales and Marketing",
+  },
+  {
+    name: "PCE",
+    color: "#EFDECD",
+    start: "2017.50",
+    end: "2018.50",
+    info: "Electrical Manufacturer",
+  },
+  {
+    name: "Powerect Industries",
+    color: "#A91101",
+    start: "2016.00",
+    end: "2017.25",
+  },
+  {
+    name: "Ping Swing",
+    color: "#00B7EB",
+    start: "2018.50",
+    end: "2019.25",
+    info: "Side Project, Connect like-minded people",
+  },
+  {
+    name: "Bots n' Brains",
+    color: "#8A2BE2",
+    start: "2019.25",
+    end: "2020.50",
+    info: "MERN stack developer",
+  },
+  {
+    name: "Map Unwrap",
+    color: "#03C03C",
+    start: "2021.25",
+    end: TodayFormatted(),
+    info: "Side Project, travel startup",
+  },
+  {
+    name: "Ten20 Infomedia",
+    color: "#FE6F5E",
+    start: "2020.50",
+    end: TodayFormatted(),
+    info: "MERN stack developer",
+  },
 ];
 
-function WorkTimeline(startYear, endYear, color) {
-  let start = (1 + years.indexOf(startYear)) * 100;
-  let end = (1 + years.indexOf(endYear)) * 100;
+function WorkTimeline(from, to, color) {
+  let startYear = from.split(".")[0];
+  let endYear = to.split(".")[0];
+  let startQuarter = from.split(".")[1];
+  let endQuarter = to.split(".")[1];
+  let start = years.indexOf(startYear) * 100 + parseInt(startQuarter);
+  let end = years.indexOf(endYear) * 100 + parseInt(endQuarter);
   let gap = end - start;
-  console.log(
-    startYear,
-    endYear,
-    // years.indexOf(startYear),
-    // years.indexOf(endYear),
-    start,
-    end,
-    gap
-  );
+  console.log(start, end, gap);
+
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
       <div
-        style={{ width: "10px", height: gap + "px", backgroundColor: color }}
+        style={{ width: "100%", height: gap + "px", backgroundColor: color }}
       ></div>
       <div style={{ width: "10px", height: start + "px" }}></div>
     </div>
@@ -54,8 +121,10 @@ export default function Work() {
   return (
     <div className="work-container">
       <h3>Work</h3>
-      <div style={{ width: "90%", display: "flex" }}>
-        <div style={{ border: "1px solid black" }}>
+      <div style={{ display: "flex",border: "1px solid #ebebeb", }}>
+        <div style={{ 
+          // border: "1px solid #ebebeb",
+ flex: 1 }}>
           {reversedYears.map((item) => (
             <div
               style={{
@@ -63,7 +132,7 @@ export default function Work() {
                 height: "100px",
                 display: "flex",
                 alignItems: "flex-end",
-                // border: "1px solid black",
+                justifyContent:"center",
               }}
             >
               {item}
@@ -72,9 +141,10 @@ export default function Work() {
         </div>
         <div
           style={{
-            border: "1px solid black",
+            // border: "1px solid #ebebeb",
             display: "flex",
             alignItems: "flex-end",
+            flex: 2,
           }}
         >
           {WorkInProgress.map((item, index) => {
@@ -87,11 +157,13 @@ export default function Work() {
         </div>
         <div
           style={{
-            border: "1px solid black",
+            // border: "1px solid #ebebeb",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "column-reverse",
             justifyContent: "center",
+            alignItems: "center",
             gap: "10px",
+            flex: 5,
           }}
         >
           {WorkInProgress.map((item) => (
@@ -104,7 +176,8 @@ export default function Work() {
                   backgroundColor: item.color,
                 }}
               ></div>
-              {item.name}
+              <p>{item.name}</p>
+              <p>{item.info}</p>
             </div>
           ))}
         </div>

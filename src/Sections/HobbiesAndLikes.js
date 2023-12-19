@@ -4,7 +4,7 @@ import "../assets/css/hobbies.css";
 const HobbyCard = ({ hobby, info }) => {
   return (
     <div className="hobby-card">
-      <p>{hobby}</p>
+      <h4>{hobby}</h4>
       <p>{info}</p>
     </div>
   );

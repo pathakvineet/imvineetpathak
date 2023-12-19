@@ -22,9 +22,14 @@ export function Insta({ name, info, url }) {
   );
 }
 
-export function YT({ name, info }) {
+export function YT({ name, info, url }) {
   return (
-    <div className="find-me-card">
+    <div
+      className="find-me-card"
+      onClick={() => {
+        window.open(url, "_blank");
+      }}
+    >
       <div>
         <RiYoutubeFill />
         <h4>{name}</h4>

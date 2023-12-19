@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "version": "0.1.1",
-  "lastUpdatedAt": "2023-11-29T12:16:07.737Z",
+  "version": "0.1.4",
+  "lastUpdatedAt": "2023-12-19T12:44:26.376Z",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

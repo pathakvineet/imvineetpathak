@@ -6,19 +6,20 @@ export default function About() {
     <div className="about-container">
       <h3>About</h3>
       <div>
-        <h5>Schooling:</h5>
+        <h4>Schooling:</h4>
         <p>The Swaminarayan School, Nagpur</p>
         <p>Modern School, Nagpur</p>
       </div>
       <div>
-        <h5>College:</h5>
+        <h4>College:</h4>
         <p>G.H.R.C.E. , Nagpur</p>
       </div>
 
       <div>
-        <h5>Life Philosophy</h5>
-        <p>Keep the basics clear, advancement will follow.</p>
+        <h4>Life Philosophy</h4>
+        <p>Be water, my friend.</p>
         <p>Simplicity is the ultimate sophistication</p>
+        <p>Keep the basics clear, advancement will follow.</p>
       </div>
     </div>
   );

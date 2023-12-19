@@ -14,7 +14,7 @@ const skillsList = [
 export function SkillDetail({ name, percentage, color }) {
   return (
     <div className="skill-detail-holder">
-      <p style={{ paddingBottom: "8px" }}>{name || "none"}</p>
+      <h4 style={{ paddingBottom: "8px" }}>{name || "none"}</h4>
       <div style={{ border: "1px solid #ccc", marginBottom: "16px" }}>
         <div
           style={{
