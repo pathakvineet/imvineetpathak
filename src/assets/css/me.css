@@ -1,10 +1,15 @@
 .me-container {
-  height: 90vh;
-  width: 90%;
+  height: 100vh;
+  width: 800px;
   margin: auto;
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
+  flex-direction: column;
+  background-color: none;
+  background-image: url("../images/me.png"); /* Replace 'your-image-path.jpg' with your actual image path */
+  background-size: cover; /* Adjusts the size of the background image */
+  background-position: center;
+  align-items: flex-start;
+  justify-content: end;
 }
 
 @keyframes blink {
@@ -25,20 +30,8 @@
   animation: blink 2s step-end infinite; /* Adjust the duration as needed */
 }
 
-@media screen and (min-width: 576px) {
+@media (max-width: 800px) {
   .me-container {
-    /* background-color: red; */
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .me-container {
-    /* background-color: blue; */
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .me-container {
-    /* background-color: green; */
+    width: 100%;
   }
 }

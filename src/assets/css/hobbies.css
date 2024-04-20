@@ -1,5 +1,5 @@
 .hobbies-container {
-  width: 90%;
+  width: 800px;
   margin: 5% auto;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,10 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
+@media (max-width: 800px) {
+  .hobbies-container {
+    width: 100%;
+  }
   .hobby-card {
     padding-bottom: 8px;
     margin: 8px 0;

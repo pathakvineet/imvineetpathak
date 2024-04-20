@@ -64,11 +64,11 @@ export default function FindMe() {
           url="https://www.instagram.com/tess.pass.arts/"
           info="Embarking on a new passion for drawing"
         />
-        <Insta
+        {/* <Insta
           name="the.silly.hamster"
           url="https://www.instagram.com/the.silly.hamster/"
           info="News in MEME format"
-        />
+        /> */}
         <Insta
           name="pixel.dumpyard"
           url="https://www.instagram.com/pixel.dumpyard/"

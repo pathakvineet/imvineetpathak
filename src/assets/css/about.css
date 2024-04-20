@@ -1,25 +1,16 @@
 .about-container {
-  width: 90%;
+  width: 800px;
   margin: 5% auto;
   display: flex;
   flex-direction: column;
 }
 
-.about-container div{
-margin-bottom: 10px;
+.about-container div {
+  margin-bottom: 10px;
 }
 
-@media screen and (min-width: 576px) {
+@media (max-width: 800px) {
   .about-container {
-    /* background-color: red; */
+    width: 100%;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .about-container {
-    /* background-color: blue; */
-  }
-}
-
-@media screen and (min-width: 1200px) {
 }

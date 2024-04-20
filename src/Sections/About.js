@@ -4,7 +4,7 @@ import "../assets/css/about.css";
 export default function About() {
   return (
     <div className="about-container">
-      <h3>About</h3>
+      <h3>About me</h3>
       <div>
         <h4>Schooling:</h4>
         <p>The Swaminarayan School, Nagpur</p>

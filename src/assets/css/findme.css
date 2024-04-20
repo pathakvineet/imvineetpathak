@@ -1,5 +1,5 @@
 .find-me-container {
-  width: 90%;
+  width: 800px;
   margin: 5% auto;
   display: flex;
   flex-direction: column;
@@ -25,19 +25,8 @@
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 576px) {
+@media (max-width: 800px) {
   .find-me-container {
-    /* background-color: red; */
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .find-me-container {
-    /* background-color: blue; */
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .find-me-container {
+    width: 100%;
   }
 }

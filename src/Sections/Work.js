@@ -24,8 +24,7 @@ function TodayFormatted() {
 
   // Calculate the day of the year
   const startOfYear = new Date(currentYear, 0, 1);
-  const totalDaysInYear =
-    Math.floor((currentDate - startOfYear) / (24 * 60 * 60 * 1000)) + 1;
+  const totalDaysInYear = Math.floor((currentDate - startOfYear) / (24 * 60 * 60 * 1000)) + 1;
 
   // Calculate the percentage of days passed
   const percentageDaysPassed = (totalDaysInYear / 365) * 100;
@@ -109,9 +108,7 @@ function WorkTimeline(from, to, color) {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-      <div
-        style={{ width: "100%", height: gap + "px", backgroundColor: color }}
-      ></div>
+      <div style={{ width: "100%", height: gap + "px", backgroundColor: color }}></div>
       <div style={{ width: "10px", height: start + "px" }}></div>
     </div>
   );
@@ -121,10 +118,8 @@ export default function Work() {
   return (
     <div className="work-container">
       <h3>Work</h3>
-      <div style={{ display: "flex",border: "1px solid #ebebeb", }}>
-        <div style={{ 
-          // border: "1px solid #ebebeb",
- flex: 1 }}>
+      <div className="work-table">
+        <div className="box">
           {reversedYears.map((item) => (
             <div
               style={{
@@ -132,7 +127,7 @@ export default function Work() {
                 height: "100px",
                 display: "flex",
                 alignItems: "flex-end",
-                justifyContent:"center",
+                justifyContent: "center",
               }}
             >
               {item}
@@ -140,11 +135,11 @@ export default function Work() {
           ))}
         </div>
         <div
+          className="box"
           style={{
             // border: "1px solid #ebebeb",
             display: "flex",
             alignItems: "flex-end",
-            flex: 2,
           }}
         >
           {WorkInProgress.map((item, index) => {
@@ -156,6 +151,7 @@ export default function Work() {
           })}
         </div>
         <div
+          className="box workIndex"
           style={{
             // border: "1px solid #ebebeb",
             display: "flex",
@@ -163,7 +159,6 @@ export default function Work() {
             justifyContent: "center",
             alignItems: "center",
             gap: "10px",
-            flex: 5,
           }}
         >
           {WorkInProgress.map((item) => (
