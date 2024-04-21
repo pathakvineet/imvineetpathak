@@ -7,6 +7,7 @@ import FindMe from "./Sections/FindMe";
 import Work from "./Sections/Work";
 import "./assets/css/common.css";
 import Music from "./Sections/Music";
+import LoopingAudioPlayer from "./Sections/LoopingAudioPlayer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Music />
       <FindMe />
       <Footer />
+      <LoopingAudioPlayer />
     </div>
   );
 }
