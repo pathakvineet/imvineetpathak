@@ -30,18 +30,12 @@ export function SkillDetail({ name, percentage, color }) {
   );
 }
 
-export default function Skills() {
+export default function SkillSpectrum() {
   return (
     <div className="skills-container">
-      <h3>Skills</h3>
+      <h3>Skill Spectrum</h3>
       {skillsList.map((item) => {
-        return (
-          <SkillDetail
-            name={item.name}
-            percentage={item.percentage}
-            color={item.color}
-          />
-        );
+        return <SkillDetail name={item.name} percentage={item.percentage} color={item.color} />;
       })}
     </div>
   );

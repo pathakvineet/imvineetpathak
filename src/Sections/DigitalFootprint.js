@@ -1,8 +1,5 @@
 import React from "react";
-import { RiInstagramFill } from "react-icons/ri";
-import { RiYoutubeFill } from "react-icons/ri";
-import "../assets/css/findme.css";
-
+import { RiInstagramFill, RiLinkedinBoxFill, RiYoutubeFill } from "react-icons/ri";
 import "../assets/css/findme.css";
 
 export function Insta({ name, info, url }) {
@@ -14,8 +11,8 @@ export function Insta({ name, info, url }) {
       }}
     >
       <div>
-        <RiInstagramFill />
-        <h4>{name}</h4>
+        <RiInstagramFill size={22} />
+        <h4 style={{ paddingLeft: "8px" }}>{name}</h4>
       </div>
       <p>{info}</p>
     </div>
@@ -31,23 +28,40 @@ export function YT({ name, info, url }) {
       }}
     >
       <div>
-        <RiYoutubeFill />
-        <h4>{name}</h4>
+        <RiYoutubeFill size={22} />
+        <h4 style={{ paddingLeft: "8px" }}>{name}</h4>
       </div>
       <p>{info}</p>
     </div>
   );
 }
 
-export default function FindMe() {
+export function Li({ name, info, url }) {
+  return (
+    <div
+      className="find-me-card"
+      onClick={() => {
+        window.open(url, "_blank");
+      }}
+    >
+      <div>
+        <RiLinkedinBoxFill size={22} />
+        <h4 style={{ paddingLeft: "8px" }}>{name}</h4>
+      </div>
+      <p>{info}</p>
+    </div>
+  );
+}
+
+export default function DigitalFootprint() {
   return (
     <div className="find-me-container">
-      <h3>Find Me</h3>
+      <h3>Digital Footprint</h3>
       <div className="find-me-showcase">
         <Insta
           name="absolute_bananas"
           url="https://www.instagram.com/absolute_bananas/"
-          info="Personal account."
+          info="Personal account"
         />
         <Insta
           name="map.unwrap"
@@ -72,7 +86,12 @@ export default function FindMe() {
         <Insta
           name="pixel.dumpyard"
           url="https://www.instagram.com/pixel.dumpyard/"
-          info="clicks that deserve a second glance"
+          info="Clicks that deserve a second glance"
+        />
+        <Li
+          name="pixel.dumpyard"
+          url="https://www.instagram.com/pixel.dumpyard/"
+          info="Career Compass"
         />
       </div>
     </div>

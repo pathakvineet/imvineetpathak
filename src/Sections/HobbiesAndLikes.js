@@ -13,7 +13,7 @@ const HobbyCard = ({ hobby, info }) => {
 export default function HobbiesAndLikes() {
   return (
     <div className="hobbies-container">
-      <h3>Hobbies and Likes</h3>
+      <h3>Hobbies and Interests</h3>
       <HobbyCard hobby="Cooking" info="kind of" />
       <HobbyCard hobby="Gardening" info="started late '23" />
       <HobbyCard hobby="Drawing" info="started late '23" />

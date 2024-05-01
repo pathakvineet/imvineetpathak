@@ -49,7 +49,7 @@ const SpotifyPreview = ({ uri, size = 400 }) => {
 export default function Music() {
   return (
     <div className="music-container">
-      <h3>Groove to my beats</h3>
+      <h3>Music & Media</h3>
       <div className="spotify-card-shelf">
         <SpotifyPreview uri="playlist/0b4dsa9NGt5r9Gnr6Iss9F?si=uzmpkgPORhKNE-2C7iFJYQ" />
         <SpotifyPreview uri="playlist/4NRuj6clQgEbyeyUlo3iev?si=H3aKbC0oRRi8Gb9rUCNi0w" />

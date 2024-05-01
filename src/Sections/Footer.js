@@ -13,18 +13,18 @@ export default function Footer() {
       <hr />
       <div className="footer-sections">
         <div>
-          <h6>Contact Me</h6>
+          <h6>Say Hello</h6>
           <p>pathakvineet3@gmail.com</p>
         </div>
         <div>
-          <h6 style={{ cursor: "pointer" }}>Download resume ⬇️</h6>
+          <h6 style={{ cursor: "pointer" }}>Grab my CV ⬇️</h6>
           <p>Last update: {updatedAt()}</p>
-          <p>website / resume version: {packageJson?.version}</p>
+          <p>website / CV version: {packageJson?.version}</p>
         </div>
       </div>
       {/* <hr /> */}
       <p className="copyright">
-        © [2023] <strong>Vineet Pathak</strong>. Crafted with ❤️ and code.
+        © [2024] <strong>Vineet Pathak</strong>. Crafted with ❤️ and code.
       </p>
     </div>
   );

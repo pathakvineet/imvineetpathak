@@ -114,10 +114,10 @@ function WorkTimeline(from, to, color) {
   );
 }
 
-export default function Work() {
+export default function ProjectOdyssey() {
   return (
     <div className="work-container">
-      <h3>Work</h3>
+      <h3>Project Odyssey</h3>
       <div className="work-table">
         <div className="box">
           {reversedYears.map((item) => (
