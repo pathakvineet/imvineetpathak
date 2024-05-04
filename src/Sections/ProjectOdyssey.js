@@ -44,7 +44,7 @@ const WorkInProgress = [
     color: "#CD7F32",
     start: "2014.50",
     end: "2015.00",
-    info: "Cabel labeling",
+    info: "Cable installation",
   },
   {
     name: "Airtel",
@@ -65,6 +65,7 @@ const WorkInProgress = [
     color: "#A91101",
     start: "2016.00",
     end: "2017.25",
+    info: "Mid-scale electrical repairs",
   },
   {
     name: "Ping Swing",
@@ -152,17 +153,14 @@ export default function ProjectOdyssey() {
         </div>
         <div
           className="box workIndex"
-          style={{
-            // border: "1px solid #ebebeb",
-            display: "flex",
-            flexDirection: "column-reverse",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "10px",
-          }}
+          style={
+            {
+              // border: "1px solid #ebebeb",
+            }
+          }
         >
           {WorkInProgress.map((item) => (
-            <div style={{ display: "flex", gap: "10px" }}>
+            <div className="index-container">
               <div
                 style={{
                   width: "20px",

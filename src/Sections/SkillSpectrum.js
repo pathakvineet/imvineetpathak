@@ -1,31 +1,35 @@
 import React from "react";
 import "../assets/css/skills.css";
 const skillsList = [
-  { name: "React.js", percentage: 86, color: "#FE6F5E" },
-  { name: "Nodejs", percentage: 78, color: "#FFBF00" },
-  { name: "MongoDB", percentage: 72, color: "#EFDECD" },
-  { name: "CSS", percentage: 80, color: "#03C03C" },
-  { name: "Debugging and Troubleshooting", percentage: 68, color: "#8A2BE2" },
-  { name: "Collaboration / Team Player", percentage: 96, color: "#00B7EB" },
-  { name: "Continuous Learning", percentage: 75, color: "#CD7F32" },
-  { name: "Creativity", percentage: 90, color: "#A91101" },
+  {
+    name: "Technical Expertise",
+    description: "Proficient in React.js, Node.js, MongoDB, CSS, and troubleshooting.",
+  },
+  {
+    name: "Creative Problem-Solving",
+    description: "Combining technical expertise with creativity to tackle challenges innovatively.",
+  },
+  {
+    name: "Collaborative Spirit",
+    description:
+      " Enjoy working in teams and leveraging collective strengths to achieve shared goals.",
+  },
+  {
+    name: "Passionate Learner",
+    description:
+      "Constantly exploring new technologies and approaches to stay ahead in the ever-evolving tech landscape.",
+  },
+  {
+    name: "Outside the Box Thinker",
+    description: "Bringing fresh perspectives and unconventional ideas to projects",
+  },
 ];
 
-export function SkillDetail({ name, percentage, color }) {
+export function SkillDetail({ name, description }) {
   return (
     <div className="skill-detail-holder">
-      <h4 style={{ paddingBottom: "8px" }}>{name || "none"}</h4>
-      <div style={{ border: "1px solid #ccc", marginBottom: "16px" }}>
-        <div
-          style={{
-            backgroundColor: color,
-            height: "14px",
-            color: "white",
-            width: percentage + "%",
-            textAlign: "center",
-          }}
-        ></div>
-      </div>
+      <h4>{name || "none"}</h4>
+      <h6>{description || ""}</h6>
     </div>
   );
 }
@@ -35,7 +39,7 @@ export default function SkillSpectrum() {
     <div className="skills-container">
       <h3>Skill Spectrum</h3>
       {skillsList.map((item) => {
-        return <SkillDetail name={item.name} percentage={item.percentage} color={item.color} />;
+        return <SkillDetail name={item.name} description={item.description} />;
       })}
     </div>
   );

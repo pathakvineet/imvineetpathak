@@ -89,8 +89,8 @@ export default function DigitalFootprint() {
           info="Clicks that deserve a second glance"
         />
         <Li
-          name="pixel.dumpyard"
-          url="https://www.instagram.com/pixel.dumpyard/"
+          name="vineet_pathak"
+          url="https://www.linkedin.com/in/vineet-pathak-107581163/"
           info="Career Compass"
         />
       </div>

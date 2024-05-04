@@ -5,7 +5,7 @@ const HobbyCard = ({ hobby, info }) => {
   return (
     <div className="hobby-card">
       <h4>{hobby}</h4>
-      <p>{info}</p>
+      <p style={{ textAlign: "right" }}>{info}</p>
     </div>
   );
 };
@@ -14,12 +14,15 @@ export default function HobbiesAndLikes() {
   return (
     <div className="hobbies-container">
       <h3>Hobbies and Interests</h3>
-      <HobbyCard hobby="Cooking" info="kind of" />
-      <HobbyCard hobby="Gardening" info="started late '23" />
-      <HobbyCard hobby="Drawing" info="started late '23" />
-      <HobbyCard hobby="Listning to Music" info="Mellow background volume" />
-      <HobbyCard hobby="Exploring places" info="Just not traveling, explore" />
-      <HobbyCard hobby="Reading Books" info="Personal development only" />
+      <HobbyCard hobby="Cooking" info="Experimenting with flavors" />
+      <HobbyCard hobby="Gardening" info="Cultivating / creating peaceful oasis at home" />
+      <HobbyCard hobby="Drawing" info="Unleash creativity and imagination" />
+      <HobbyCard
+        hobby="Listning to Music"
+        info="Finding inspiration in diverse melodies and rhythms"
+      />
+      <HobbyCard hobby="Exploring places" info="Seeking adventure and discovering hidden gems" />
+      <HobbyCard hobby="Reading Books" info="Broadening horizons and gaininig insights" />
     </div>
   );
 }

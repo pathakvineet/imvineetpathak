@@ -3,14 +3,16 @@
   margin: 5% auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .about-container div {
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 @media (max-width: 800px) {
   .about-container {
-    width: 100%;
+    width: 90%;
+    margin: 10% auto;
   }
 }

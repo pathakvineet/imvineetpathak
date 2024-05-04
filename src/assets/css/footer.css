@@ -25,7 +25,8 @@
 
 @media (max-width: 800px) {
   .footer-container {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .footer-sections {
     width: 80%;

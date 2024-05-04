@@ -6,20 +6,25 @@ export default function About() {
     <div className="about-container">
       <h3>About me</h3>
       <div>
-        <h4>Schooling:</h4>
-        <p>The Swaminarayan School, Nagpur</p>
-        <p>Modern School, Nagpur</p>
-      </div>
-      <div>
-        <h4>College:</h4>
-        <p>G.H.R.C.E. , Nagpur</p>
+        <h4>Academic History</h4>
+        <p>
+          The Swaminarayan School, Nagpur
+          <span style={{ paddingLeft: "8px" }}>(School)</span>
+        </p>
+        <p>
+          Modern School, Nagpur
+          <span style={{ paddingLeft: "8px" }}>(High School)</span>
+        </p>
+        <p>
+          G.H.R.C.E., Nagpur
+          <span style={{ paddingLeft: "8px" }}>(B.tech)</span>
+        </p>
       </div>
 
       <div>
-        <h4>Life Philosophy</h4>
-        <p>Be water, my friend.</p>
-        <p>Simplicity is the ultimate sophistication</p>
-        <p>Keep the basics clear, advancement will follow.</p>
+        <h4>Guiding Values</h4>
+        <p>Love what you do.</p>
+        <p>Simplicity is the ultimate sophistication.</p>
       </div>
     </div>
   );

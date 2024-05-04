@@ -16,7 +16,8 @@
 
 @media (max-width: 800px) {
   .hobbies-container {
-    width: 100%;
+    width: 90%;
+    margin: 10% auto;
   }
   .hobby-card {
     padding-bottom: 8px;
