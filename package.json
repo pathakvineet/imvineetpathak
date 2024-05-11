@@ -1,7 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.2.0",
-  "lastUpdatedAt": "2024-05-04T07:35:22.496Z",
+  "homepage": "https://pathakvineet.github.io/imvineetpathak",
+  "lastUpdatedAt": "2024-05-11T13:13:07.285Z",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
