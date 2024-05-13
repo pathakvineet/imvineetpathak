@@ -29,7 +29,7 @@ export function SkillDetail({ name, description }) {
   return (
     <div className="skill-detail-holder">
       <h4>{name || "none"}</h4>
-      <h6>{description || ""}</h6>
+      <p>{description || ""}</p>
     </div>
   );
 }
