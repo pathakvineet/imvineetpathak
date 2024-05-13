@@ -9,7 +9,7 @@
   background-size: cover; /* Adjusts the size of the background image */
   background-position: center;
   align-items: flex-start;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 @keyframes blink {
