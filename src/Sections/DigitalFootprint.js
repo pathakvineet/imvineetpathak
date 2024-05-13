@@ -56,7 +56,7 @@ export function Li({ name, info, url }) {
 export default function DigitalFootprint() {
   return (
     <div className="find-me-container">
-      <h3>Digital Footprint</h3>
+      <h3 style={{ marginBottom: "30px" }}>Digital Footprint</h3>
       <div className="find-me-showcase">
         <Insta
           name="absolute_bananas"

@@ -37,7 +37,7 @@ export function SkillDetail({ name, description }) {
 export default function SkillSpectrum() {
   return (
     <div className="skills-container">
-      <h3>Skill Spectrum</h3>
+      <h3 style={{ marginBottom: "30px" }}>Skill Spectrum</h3>
       {skillsList.map((item) => {
         return <SkillDetail name={item.name} description={item.description} />;
       })}
