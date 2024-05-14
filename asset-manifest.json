@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/imvineetpathak/static/css/main.f09352c4.css",
-    "main.js": "/imvineetpathak/static/js/main.5e29f215.js",
+    "main.css": "/imvineetpathak/static/css/main.549bc04d.css",
+    "main.js": "/imvineetpathak/static/js/main.4ed7a9a3.js",
     "static/js/787.7da95b79.chunk.js": "/imvineetpathak/static/js/787.7da95b79.chunk.js",
-    "static/media/me.png": "/imvineetpathak/static/media/me.d3a62fae5031c22bc0f5.png",
+    "static/media/me2.png": "/imvineetpathak/static/media/me2.5510144659d9082597a2.png",
     "index.html": "/imvineetpathak/index.html",
-    "main.f09352c4.css.map": "/imvineetpathak/static/css/main.f09352c4.css.map",
-    "main.5e29f215.js.map": "/imvineetpathak/static/js/main.5e29f215.js.map",
+    "main.549bc04d.css.map": "/imvineetpathak/static/css/main.549bc04d.css.map",
+    "main.4ed7a9a3.js.map": "/imvineetpathak/static/js/main.4ed7a9a3.js.map",
     "787.7da95b79.chunk.js.map": "/imvineetpathak/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f09352c4.css",
-    "static/js/main.5e29f215.js"
+    "static/css/main.549bc04d.css",
+    "static/js/main.4ed7a9a3.js"
   ]
 }
