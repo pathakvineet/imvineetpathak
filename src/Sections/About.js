@@ -26,6 +26,11 @@ export default function About() {
         <p>Love what you do.</p>
         <p>Simplicity is the ultimate sophistication.</p>
       </div>
+
+      <div>
+        <h4>Timeless Wisdom</h4>
+        <p>Neurons that fire together, wire together.</p>
+      </div>
     </div>
   );
 }
